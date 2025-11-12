@@ -44,7 +44,7 @@ src/
 │   ├── product.entity.ts
 │   └── transaction.entity.ts
 ├── migrations/          # Database migrations
-│   └── 1700000000000-InitialSchema.ts
+│   └── InitialSchema.ts
 ├── users/               # Users module
 │   ├── dto/
 │   ├── users.controller.ts
@@ -83,16 +83,16 @@ npm install
 Create a `.env` file in the root directory:
 
 ```env
-# Database Configuration
-POSTGRES_HOST=localhost
-POSTGRES_PORT=5432
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres
-POSTGRES_DB=nestjs_db
-
-# Application Configuration
-PORT=3000
+# Database
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
+DB_DATABASE=inventory_db
+# Application
 NODE_ENV=development
+PORT=3000
+LOG_LEVEL=debug
 ```
 
 ### 3. Start PostgreSQL with Docker Compose
