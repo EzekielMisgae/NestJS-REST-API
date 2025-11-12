@@ -139,8 +139,8 @@ Create a new user.
 **Request Body:**
 ```json
 {
-  "email": "user@example.com",
-  "name": "John Doe"
+  "email": "abebe@example.com",
+  "name": "Abebe Kebede"
 }
 ```
 
@@ -148,8 +148,8 @@ Create a new user.
 ```json
 {
   "id": "123e4567-e89b-12d3-a456-426614174000",
-  "email": "user@example.com",
-  "name": "John Doe",
+  "email": "abebe@example.com",
+  "name": "Abebe Kebede",
   "isActive": true,
   "createdAt": "2024-01-01T00:00:00.000Z",
   "updatedAt": "2024-01-01T00:00:00.000Z"
