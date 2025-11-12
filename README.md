@@ -1,6 +1,6 @@
 # NestJS REST API
 
-A production-ready NestJS REST API for managing users, products, and transactions with PostgreSQL, TypeORM, and comprehensive error handling.
+NestJS REST API for managing users, products, and transactions with PostgreSQL, TypeORM, and comprehensive error handling.
 
 ## Features
 
