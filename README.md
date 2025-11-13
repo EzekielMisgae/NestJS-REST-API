@@ -128,7 +128,7 @@ src/
 - **Global Exception Filter**: Consistent error response format
 - **DTO Validation**: Request validation at controller level
 
-## Roadmap / Future Enhancements
+## Future Enhancements with more time
 
 ### 🔐 Authentication & Authorization
 - **Sign-up/Login**: Implement JWT-based authentication
