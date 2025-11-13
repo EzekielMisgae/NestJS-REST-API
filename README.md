@@ -77,7 +77,7 @@ API: `http://localhost:3000` | Swagger: `http://localhost:3000/api`
 ```json
 {
   "name": "Laptop",
-  "price": 999.99,
+  "price": 50000,
   "quantity": 10,
   "description": "High-performance laptop"
 }
