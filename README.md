@@ -128,6 +128,25 @@ src/
 - **Global Exception Filter**: Consistent error response format
 - **DTO Validation**: Request validation at controller level
 
+## Assumptions & Trade-offs
+
+### Assumptions
+
+- **No Authentication**: API assumes requests are valid; `userId` is provided in headers where needed
+- **No Negative Stock**: Product quantity cannot go below zero; all adjustments that would cause negative stock are rejected
+- **Unique Emails**: Email addresses must be unique across all users; product names don't need to be unique
+- **Immutable Audit Trail**: All inventory changes are logged and cannot be edited or deleted
+- **Local/Dev Focus**: Designed for simple local/development deployment, not multi-data center scale
+
+### Trade-offs
+
+- **Pessimistic Locking**: Prevents race conditions but reduces concurrent write performance (safer but less scalable for high-volume operations)
+- **Manual Migrations Only**: No synchronize mode for production safety, but requires manual migration setup after entity changes
+- **Hard Deletes**: All deletions are permanent with no soft delete or recovery mechanism
+- **Simple Error Responses**: Global error format may lack detailed per-field validation messages
+- **No Pagination**: List endpoints return all records; not suitable for large datasets yet
+- **Minimal Testing**: Focus on core functionality; production would require expanded test coverage and monitoring
+
 ## Future Enhancements with more time
 
 ### 🔐 Authentication & Authorization
